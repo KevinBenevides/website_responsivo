@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    font-size: 14px;
+}
+
+.top-bar{
+    background: #111;
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    color: #fff;
+    font-size: 1.1em;
+    padding: 20px;
+    flex: 1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu{
+    flex: 3;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu li{
+    flex: 1;
+    padding: 1em;
+}
+
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    padding: 1.4em 2.5em;
+
+}
+
+.menu li a:hover{
+    color: yellow;
+    text-shadow: 0px 0px 3px #fff;
+}
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-text{
+    text-align: center;
+    display: flex;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text-item{
+    color: #fff;
+    width: 50%;
+}
+
+.banner-text-item h2{
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+.banner-text-item p{
+    font-size: 1.2em;
+}
+
+.content-prod{
+    text-align: center;
+    padding: 3%;
+}
+
+.content-prod h2{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.content-prod-item{
+    display: flex;
+    padding: 2em;
+}
+
+.content-prod-item h3{
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+.content-item{
+    padding:0 5%;
+}
+
+.contact{
+    background: url(../img/banner3.jpg);
+    padding: 5% 0;
+    width: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 2em;
+    color: #fff;
+}
+
+.contact-item{
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.contact-item form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item form input, .contact-item form textarea{
+    height: 2em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.contact-item form input[type="button"]{
+    width: 20%;
+}
+
+.contact-item form textarea{
+    height: 12em;
+}
+
+/* breackpoint: 920px */
+@media(max-width:910px){
+    
+    .top-bar{
+        flex-direction: column;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .logo{
+        font-size: 1em;
+    }
+}
