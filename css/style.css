@@ -25,6 +25,16 @@ body{
     text-align: center;
 }
 
+.toggle{
+    color: #fff;
+    font-size: 2em;
+    background-color: #333;
+    text-align: right;
+    height: 2em;
+    padding: 0.5em;
+    display: none;
+}
+
 .menu{
     flex: 3;
 }
@@ -152,18 +162,79 @@ body{
     height: 12em;
 }
 
+.active{
+        display: flex;
+    }
+
+.fullscreen {
+    /* viewport height */
+    height: 100vh;
+    /* viewport width */
+    width: 100vw;
+}
 /* breackpoint: 920px */
-@media(max-width:910px){
+@media screen and (max-width:910px){
     
     .top-bar{
         flex-direction: column;
     }
-
+    
     .menu ul{
         flex-direction: column;
+        display: none;
+    }
+    
+    .menu ul.active{
+        display: flex;
     }
 
     .logo{
         font-size: 1em;
+        display: none;
+    }
+
+    .toggle{
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
+
+/* Display tablet */
+@media screen and (max-width: 756px){
+    .banner{
+        height: 300px;
+    }
+    .banner-text-item{
+        width: 80%;
+    }
+    .contact-item{
+        padding: 0 3%;
+    }
+
+}
+
+/* Display mobile */
+@media screen and (max-width:340px){
+    .banner{
+        height: 230px;
+    }
+
+    .banner-text-item{
+        width: 90%;
+    }
+
+    .content-prod-itens{
+        flex-direction: column;
+    }
+
+    .contact-item form{
+        width: 90%;
+    }
+
+    .contact-item form input[type="button"]{
+        width: 100%;
+    }
+
+
+}
+
